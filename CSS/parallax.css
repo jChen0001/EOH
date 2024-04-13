@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide,
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    width: 600vw;
+    height: 100vh;
+    transform: translateX(-100vw);
+    transform-origin: top left;
+    background-color: #333;
+    animation: moveCarousel 10s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes moveCarousel{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateX(-500vw) ;
+    }
+}
+
+
+.container {
+    height: 100vw;
+    width: 100vw;
+    transform-origin: top left;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.layer {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: bottom;
+    background-size: cover;
+    transition: left 0.5s ease-in-out;
+  
+}
+
+.l5 {
+    top: 0;
+    left: 400vw;
+    height: 100vh;
+    width: 100vw;
+    background-position: bottom;
+    background-size: cover;
+    transition: left 0.5s ease-in-out;
+    color: white;
+}
+
+
+/* .l1 {
+    position: absolute;
+    background: url('../Images/aircraft.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50vw;
+    top: 45vh;
+    left: 62vw;
+}
+
+.l2 {
+    position: absolute;
+    background: url('../Images/airplane.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40vw;
+    top: 3vh;
+    left: 30vw;
+   
+}
+
+.l3 {
+    position: absolute;
+    background: url('../Images/uncleSam.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30vw;
+    left: 35vw;
+    top: 40%;
+}
+
+.l4 {
+    position: absolute;
+    background: url('../Images/tank.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+    width: 30vw;
+    top: 60vh;
+    left: 5vw;
+} */
+
+a {
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    letter-spacing: 10px;
+    top: 30vh;
+    left: 5vw;
+
+}
+
+#repeat{
+    position: absolute;
+    top: 30vh;
+    left: 500vw;
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    letter-spacing: 10px;
+    top: 30vh;
+    left: 5vw;
+}
+
+.vignette{
+    position: absolute;
+    height: 100vh;
+    width: 40vw;
+    background: linear-gradient(to right, transparent, #333, transparent);
+    z-index: 2;
+}
+
+.vignette-last{
+    position: absolute;
+    height: 100vh;
+    width: 20vw;
+    background: linear-gradient(to right, transparent, #333);
+    z-index: 2;
+}
+
+#f1{
+    left: 80vw; 
+}
+
+#f2{
+    left: 180vw; 
+}
+
+#f3{
+    left: 280vw;
+}
+
+#f4{
+    left: 380vw;    
+}
+
+#f5{
+    left: 480vw;    
+}
+.slide{
+    width: 100vw;
+    height: 100vh;
+}
+
+.img1 {
+    background: url('../Images/Holocaust1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+
+}
+
+.img2 {
+    background: url('../Images/IsraeliPalestine1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.img3 {
+    background: url('../Images/Holocaust2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+ 
+}
+
+.img4 {
+    background: url('../Images/IsraeliPalestine2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  
+}
+/* .text1 {
+    color: #FFFFFF;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    width: 40%;
+ 
+}
+
+.text2 {
+    position: absolute;
+    right: 0;
+    color: #FFFFFF; 
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    width: 40%;
+  
+}
+
+.text3 {
+    color: black;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    width: 100%;
+   
+}
+
+.text4 {
+    color: #FFFFFF;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    width: 100%;
+   
+} */
+
+ 
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+

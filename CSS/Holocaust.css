@@ -1,0 +1,268 @@
+/* First Page */
+#titleContainer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url(../Images/HolocaustBG.jpg);
+    background-size: 100% 100%;
+}
+
+#titleText {
+    color: white;
+    font-size: 8rem;
+}
+
+/* Second Page */
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 120vw;
+    background-color: #202020;
+}
+
+#section1 img {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 10%;
+    margin-right: 2.3vw;
+}
+
+#section1iInfo {
+    color: white;
+    font-size: 2rem;
+    padding: 3%;
+}
+
+@property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
+
+#counter {
+    padding: 2%;
+    color: red;
+    font-size: 5rem;
+    transition: --num 1.5s ease;
+    counter-reset: num var(--num);
+    transition-delay: 1s;
+}
+
+.show {
+    --num: 6000000;
+}
+
+#counter::after {
+    content: counter(num);
+}
+
+/* Third Page */
+#section2 {
+    width: 120vw;
+    /* Keep width as you prefer */
+    height: 100vh;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add flex display to allow positioning */
+}
+
+#section2iInfo {
+    font-size: 2rem;
+    width: 50%;
+    /* Set width to 50% to make it half the page */
+    padding-left: 10vw;
+    /* Adjust padding as needed */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
+
+.section2Image {
+    margin-top: 10vh;
+    /* Adjust margin-top to move the images up */
+    display: flex;
+    flex-direction: column;
+    /* Change flex-direction to column */
+    align-items: center;
+    /* Center-align items */
+    width: 50%;
+    /* Set width to 50% to make it half the page */
+}
+
+.section2Image img {
+    display: grid;
+    align-items: center;
+    width: 15vw;
+    border-radius: 10%;
+    margin-bottom: 20px;
+    /* Add margin between images */
+}
+
+.imgAnimation1 {
+    opacity: 0;
+    display: flex;
+    transform: translateX(100%);
+    /* Change translateY to translateX */
+    transition: all 1s;
+}
+
+.imgAnimation1:nth-child(2) {
+    transition-delay: 200ms;
+    /* Change translateY to translateX */
+}
+
+.imgAnimation1:nth-child(3) {
+    transition-delay: 400ms;
+    /* Change translateY to translateX */
+}
+
+.animateImg1 {
+    opacity: 1;
+    transform: translateX(0%);
+    /* Change translateY to translateX */
+    z-index: 1;
+}
+
+.animateImg1:nth-child(2) {
+    transform: translateX(-80%);
+    z-index: 2;
+}
+
+.animateImg1:nth-child(3) {
+    transform: translateX(-160%);
+    z-index: 3;
+}
+
+/* Fourth Page*/
+#section3 {
+    width: 120vw;
+    height: 100vh;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3iInfo {
+    font-size: 2rem;
+    width: 50%;
+    /* Set width to 50% to make it half the page */
+    padding-left: 10vw;
+    /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+.section3Image img {
+    padding-left: 10vw;
+    width: 75%;
+    border-radius: 50%;
+}
+
+.imgAnimation2 {
+    opacity: 0;
+    display: flex;
+    transform: translateY(-100%);
+    /* Change translateY to translateX */
+    transition: all 1s;
+}
+
+.animateImg2 {
+    opacity: 1;
+    transform: translateY(0%);
+    /* Change translateY to translateX */
+    z-index: 1;
+}
+
+/* Fifth Page */
+#section4 {
+    width: 120vw;
+    height: 100vh;
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4iInfo {
+    font-size: 2rem;
+    width: 50%;
+    /* Set width to 50% to make it half the page */
+    padding: 3%;
+    /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+.section4Image {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section4Image img {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.imgAnimation3 {
+    padding-top: 10%;
+    opacity: 0;
+    display: flex;
+    transform: translateY(-150%);
+    /* Change translateY to translateX */
+    transition: all 1s;
+}
+
+.imgAnimation3:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.animateImg3 {
+    opacity: 1;
+    transform: translateY(0%);
+    /* Change translateY to translateX */
+    z-index: 1;
+}
+
+/*Government Slide*/
+#government {
+    width: 120vw;
+    height: 100vh;
+    background-color: #36454F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.governmentiInfo {
+    color: white;
+    font-size: 1.75rem;
+    width: 30%;
+    /* Set width to 50% to make it half the page */
+    padding-right: 10vw;
+    /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+.governmentImage img {
+    margin-right: 5vw;
+    border-radius: 5%;
+    width: 100%;
+}
+
+.govImage {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animateGov {
+    opacity: 1;
+}
+.conclusionText{
+    font-size: 1.5em;
+}

@@ -1,0 +1,64 @@
+.MenuBar {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    background: #848482;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    border-bottom: black 1px solid;
+
+}
+#logo{
+    height: 50px;
+    left: 2px;
+    top: 5px;
+    position: fixed;
+    z-index: 12;
+}
+.MainMenu {
+    width: 40px;
+    height: 40px;
+    right: 2vw;
+    top: 2vh;
+    position: fixed;
+    z-index: 12;
+}
+
+#MenuBackground {
+    z-index: -1;
+    transition: all ease-in-out 0.5s;
+    background: rgba(40, 40, 40, 1);
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    place-items: center;
+}
+
+.translated1 {
+    pointer-events: initial !important;
+    opacity: 1 !important;
+}
+
+.menuItems {
+    font-size: 2.5em;
+    text-align: left;
+    margin: 0.5em;
+}
+
+body:has(.translated1) {
+    overflow: hidden;
+}
+
+.menuItems a {
+    text-decoration: none;
+    color: white;
+}

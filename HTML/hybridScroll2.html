@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="stylesheet" href="../CSS/hybridScroll2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
     <title>Israeli Palestine Conflict</title>
@@ -13,7 +14,7 @@
 
 <body>
     <div class="MenuBar">
-        <a href="https://cantinadynamic-albertarmor.codio.io/index.html"><img id="logo" src="https://jchen0001.github.io/EOH/../Images/Logo.png" alt="Logo"></a>
+        <a href="https://cantinadynamic-albertarmor.codio.io/index.html"><img id="logo" src="../Images/Logo.png" alt="Logo"></a>
         <img class="MainMenu" id="MainMenu" src="../Images/list.png" alt="Menu icon" onclick="changeImage()">
         <div id="MenuBackground">
             <div id=menuContainer>
@@ -25,83 +26,144 @@
         </div>
     </div>
     <!-- <div id="vignette"></div> -->
-    <div id="titleContainer">
+    <div class="titleContainer">
+        <img id="img1" src="../Images/img1.webp" alt="">
         <h1 id="hIntro">Israeli Palestine Conflict</h1>
     </div>
     <main>
-        <section class="outerContainer1">
-            <div class="container">
+        <section>
+            <div class="iContainer">
                 <div class="pIntro">
-                    <p class="iIntro">The unending battle between Israel and Palestine can be traced back deep into history where both sides have the demands both government refuses to compromise. These value and government with deep resentment restricts reconciliation between both groups resulting with numerous casualty throughout this historic conflict</p>
+                    <p class="iIntro">The unending battle between Israel and Palestine can be traced back deep into history where both sides have the demands both governments refuse to compromise over land and religious tension. These values and government with deep resentment restricts reconciliation between both groups resulting with numerous casualty throughout this historic conflict</p>
                     <br>
-                    <p class="iIntro2"><strong>Disclaimer: Information presented does not cover the entire conflict</strong></p>
+                    <p class="iIntro2"><strong>Disclaimer: Information presented is only a summary of the conflict</strong></p>
                 </div>
             </div>
         </section>
         <div id="vignette"></div>
-        <div class="sticky_parent">
-            <div class="sticky">
-                <div class="scroll_section">
-                    <section class="iInfo1">
-                        <!-- <img class="img1" src="../Images/immi.jpg" alt=""> -->
-                        <p class = "slideTxt1">Conflicts ensued after the Jewish immigrant settled in Palestine as the population of Palestine attempted to limit the number of immigration that enraged the Jewish immigrant. In November of 1943, the partition of Palestine was drafted and finalized by the newly formed United Nations that wished to distribute the land that would satisfy both party.</p>
-                    
-                    </section>
-                    <section class="iInfo">
-                        <p>Jews were ecstatic. Palestinians were enraged.</p>
-                        <p>The first arab israel war breaks out and israel won, making a grab for more land, split into 3 parts, jordan occupies west bank, egypt occupies gaza, and state of israel takes 78% of historical palestine.</p>
-                    </section>
-                    <section class="iInfo">
-                        <p>Peace was always sought by many countries that wished the two groups to live in harmony. With efforts of ceasefire peace treaties, battles between Israel and Palestine are often on and off since the peace treaties would only last for a couple of months before another brawl breaks out</p>
-                        <p>The Oslo agreement between Israel and Palestine where Israel asked that Pakistan give up their will to destroy Israel and safety. Pakistan in return asked for independence in militarized zones occupied by Israel and Jerusalem shall be a free City</p>
-                    </section>
-                </div>
+        <section id="section1">
+            <p class="iInfo">Conflicts ensued after the Jewish immigrant settled in Palestine as the population of Palestine attempted to limit the number of immigration that enraged the Jewish immigrant. In November of 1943, the partition of Palestine was drafted and finalized by the newly formed United Nations that wished to distribute the land that would satisfy both party.</p>
+            <img id="img2" src="../Images/unPartition.jpeg" alt="">
+        </section>
+        <section class="iInfo">
+            <div class="eoText" id="text3">
+                <p>Jews were ecstatic. Palestinians were enraged.</p>
+                <p>The first arab israel war breaks out and israel won, making a grab for more land, split into 3 parts, jordan occupies west bank, egypt occupies gaza</p>
             </div>
-        </div>
-        </div>
-        </div>
-        <section>
-            <div class="container">
-                <h1>Early 21st Century</h1>
-                <p>During the 21st century, there was a power struggle between Hamas and Fatas. Hamas eventually won the election due to his supporters who shared a similar goal of eradicating Israel.</p>
-                <p>A military coup was staged to eliminate Hamas, but failed as Hamas intelligence intercepted the plans and took over Gaza before it could happen.</p>
-                <p>The Palestinian government is now split in two: one run by Hamas in the Gaza strip and Fatas in West Bank</p>
-                <p>The Israeli government is under the control of Benjamin Netanyahu</p>
+            <img id="img3" src="../Images/ppl.png" alt="">
+        </section>
+        <section class="iInfo">
+            <div id="section2">
+                <p>With efforts of ceasefire peace treaties, battles between Israel and Palestine are often on and off since the peace treaties would only last for a couple of months before another brawl breaks out. The Oslo agreement between Israel and Palestine where Israel asked that Pakistan give up their will to destroy Israel and safety. Pakistan in return asked for independence in militarized zones occupied by Israel and Jerusalem shall be a free City</p>
+                <img id="img4" src="../Images/Oslo.png" alt="">
             </div>
         </section>
-        <div class="sticky_parent">
-            <div class="sticky">
-                <div class="scroll_section">
-                    <section class="iInfo">
-                        <p>Israel launched Operation Cast LED over four years which would pound and target Hamas targets that also injured many civilians due to the dense population</p>
-                        <h3>Casualty: </h3>
-                        <p>Gazan: 1,400</p>
-                        <p>Israel ended the operation on the 18th of January 2009</p>
-                    </section>
-                    <section class="iInfo">
-                        <p>Israel blockaded Gaza to send the message that they will suffer as long as they retain Hamas as their leader. This blockade prevented Gaza from recieving any outside support that includes food, medicine, and building material</p>
-                        <p>In retaliation, Hamas launched hundreds of rockets to Israel as Israel responded with mortars and air strikes.</p>
-                        <p>Israel was trying to locate the tunnels used by the Gazans that offered shelter to Hamas officials, store weapon, and gain material through a tunnel to Egypt bypassing the financial restriction</p>
-                        <p>The tunnel connecting Gaza and the outside world was slowly being picked apart</p>
-                        <p>Gaza income collapsed and half of the adults in Gaza were unemployed</p>
-                    </section>
-                    <section class="iInfo">
-                        <p>Israel's dominance in weaponized drone system that aided in the destruction of Hamas's headquarters, munition, and 20000 homes and killed 2000 more Palestinians</p>
-                        <p>July 8, 2014 operation protective Edge was put into action turning Gaza into a warzone</p>
-                    </section>
+        <section>
+            <div id="section3">
+                <div class="eoText">
+                    <h1>Early 21st Century</h1>
+                    <br>
+                    <p>During the 21st century, there was a power struggle between Hamas and Fatas. Hamas eventually won the election due to his supporters who shared a similar goal of eradicating Israel.</p>
+                    <p>A military coup was staged to eliminate Hamas, but failed as Hamas intelligence intercepted the plans and took over Gaza before it could happen.</p>
+                    <p>The Palestinian government is now split in two: one run by Hamas in the Gaza strip and Fatas in West Bank</p>
+                    <p>The Israeli government is under the control of Benjamin Netanyahu</p>
+                    <img id="img5" src="../Images/Hamas.webp" alt="">
                 </div>
             </div>
-        </div>
-        <section>
-            <div class="container">
-                <h1>Modern Day</h1>
-                <p>October 7 2023 Hamas launched its biggest attack on israel Operation Al Aqsa Flood, Israel responded by declaring war on Palestinians</p>
-                <p>Israel bombarded and besieged Palestine. Invaded in hopes of pressuring Hamas to release their Israeli hostages </p>
+        </section>
+        <section class="iInfo">
+            <div id="section4">
+                <p>Israel launched Operation Cast LEAD over four years which would pound and target Hamas targets that also injured many civilians due to the dense population</p>
+                <h3>Casualty: </h3>
+                <p>Gazan: 1,400</p>
+                <p>Israel ended the operation on the 18th of January 2009</p>
+                <img id="img6" src="../Images/OpCastLead.avif" alt="">
             </div>
         </section>
+        <section class="iInfo">
+            <div id="section5">
+                <div class="eoText">
+                    <p>Israel blockaded Gaza to send the message that they will suffer as long as they retain Hamas as their leader. This blockade prevented Gaza from recieving any outside support that includes food, medicine, and building material</p>
+                    <p>In retaliation, Hamas launched hundreds of rockets to Israel as Israel responded with mortars and air strikes.</p>
+                    <p>Israel was trying to locate the tunnels used by the Gazans that offered shelter to Hamas officials, store weapon, and gain material through a tunnel to Egypt bypassing the financial restriction</p>
+                    <p>The tunnel connecting Gaza and the outside world was slowly being picked apart</p>
+                    <p>Gaza income collapsed and half of the adults in Gaza were unemployed</p>
+                    <img id="img7" src="../Images/hamasAirstrike.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="iInfo">
+            <div id="section6">
+                <p>Israel's dominance in weaponized drone system that aided in the destruction of Hamas's headquarters, munition, and 20000 homes and killed 2000 more Palestinians</p>
+                <p>July 8, 2014 operation protective Edge was put into action turning Gaza into a warzone</p>
+                <img id="img8" src="../Images/destructionHamas.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div id="section7">
+                <div class="eoText">
+                    <h1>Modern Day</h1>
+                    <br>
+                    <p>October 7 2023 Hamas launched its biggest attack on israel Operation Al Aqsa Flood, Israel responded by declaring war on Palestinians</p>
+                    <p>Israel bombarded and besieged Palestine. Invaded in hopes of pressuring Hamas to release their Israeli hostages </p>
+                </div>
+                <img id="img9" src="../Images/OpAlAqsaFlood.jpg" alt="">
+            </div>
+        </section>
+        <div class="container">
+            <div class="slide">
+                <div class="item" style="background-image: url(https://ichef.bbci.co.uk/news/1536/cpsprodpb/2827/production/_118597201_getty_shouting.jpg.webp);">
+                    <div class="content">
+                        <div class="name">Title</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button><a href="https://www.bbc.com/news/newsbeat-44124396">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/NGXCPKYZV5FIQIABKVLHDUEOBQ_size-normalized.jpg&w=1200);">
+                    <div class="content">
+                        <div class="name">Title</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button><a href="">learn more</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2019/05/Quiz_IsraelPalestine_New.jpg.webp);">
+                    <div class="content">
+                        <div class="name">Title</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button><a href="">learn more</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://images.axios.com/sbhAeZsL8KMLAnNNiJ-nkJjzyq8=/0x24:1280x744/1920x1080/2023/10/09/1696894101704.jpg);">
+                    <div class="content">
+                        <div class="name">Title</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://images.carnegieendowment.org/images/article_images/palstine-GettyImages-1241857967.jpg);">
+                    <div class="content">
+                        <div class="name">Title</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://ca-times.brightspotcdn.com/dims4/default/2030eea/2147483647/strip/true/crop/5616x3744+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fbd%2F44%2F9f2c57b84972b2e13cbf2d8b2ca9%2F1358911-fg-1022-israelgazawar-mwy-13484.jpg);">
+                    <div class="content">
+                        <div class="name">Title</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
     </main>
 </body>
 <script src="../JAVASCRIPT/hybrid2.js"></script>
 <script src="../JAVASCRIPT/codefix.js"></script>
+<script src="../JAVASCRIPT/apps.js"></script>
 
 </html>

@@ -1,21 +1,19 @@
-const stickySections = [...document.querySelectorAll('.sticky')]
+// const stickySections = [...document.querySelectorAll('.sticky')]
 
 
-window.addEventListener('scroll', (e) => {
-    for(let i = 0; i < stickySections.length; i++){
-        transform(stickySections[i])
-    }
-})
+// window.addEventListener('scroll', (e) => {
+//     for(let i = 0; i < stickySections.length; i++){
+//         transform(stickySections[i])
+//     }
+// })
 
-function transform(section){
-    const offsetTop = section.parentElement.offsetTop;
-    const scrollSection = section.querySelector('.scroll_section')
-    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-    percentage = percentage < 0 ? 0 : percentage > 260 ? 260 : percentage;
-    scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`;
-}
-
-
+// function transform(section){
+//     const offsetTop = section.parentElement.offsetTop;
+//     const scrollSection = section.querySelector('.scroll_section')
+//     let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
+//     percentage = percentage < 0 ? 0 : percentage > 260 ? 260 : percentage;
+//     scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`;
+// }
 
 
 const counterAnimation = document.querySelectorAll('#counter');
@@ -63,3 +61,18 @@ counterAnimation.forEach((el) => observerOne.observe(el));
 txtAnimation1.forEach((el) => observerTwo.observe(el));
 txtAnimation2.forEach((el) => observerThree.observe(el));
 imgAnimation1.forEach((el) => observerFour.observe(el));
+
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item');
+    document.querySelector('.slide').appendChild(items[0]);
+    console.log(items[0], items)
+}) 
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item');
+    document.querySelector('.slide').prepend(items[items.length - 1]); // here the length of items = 6
+})
+
+

@@ -20,7 +20,7 @@
     align-items: center;
     height: 100vh;
     width: 120vw;
-    background-color: #202020;
+    background-color: #101010;
 }
 
 #section1 img {
@@ -31,6 +31,9 @@
 }
 
 #section1iInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
     color: white;
     font-size: 2rem;
     padding: 3%;
@@ -45,7 +48,7 @@
 #counter {
     padding: 2%;
     color: red;
-    font-size: 5rem;
+    font-size: 5.5rem;
     transition: --num 1.5s ease;
     counter-reset: num var(--num);
     transition-delay: 1s;
@@ -64,16 +67,27 @@
     width: 120vw;
     /* Keep width as you prefer */
     height: 100vh;
-    background-color: darkgrey;
+    background-color: #202020;
     display: flex;
     justify-content: center;
     align-items: center;
     /* Add flex display to allow positioning */
 }
 
-#section2iInfo {
+#section2iInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#section2iInfoContainer strong {
+    color: #d62020;
+}
+
+.section2iInfo {
+    color: #c6c6c6;
     font-size: 2rem;
-    width: 50%;
+    width: 100%;
     /* Set width to 50% to make it half the page */
     padding-left: 10vw;
     /* Adjust padding as needed */
@@ -141,15 +155,26 @@
 #section3 {
     width: 120vw;
     height: 100vh;
-    background-color: darkslategray;
+    background-color: #303030;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#section3iInfo {
+#section3iInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#section3iInfoContainer strong {
+    color: #d62020;
+}
+
+.section3iInfo {
+    color: #c6c6c6;
     font-size: 2rem;
-    width: 50%;
+    width: 100%;
     /* Set width to 50% to make it half the page */
     padding-left: 10vw;
     /* Adjust padding as needed */
@@ -181,22 +206,31 @@
 #section4 {
     width: 120vw;
     height: 100vh;
-    background-color: slategray;
+    background-color: #404040;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#section4iInfo {
-    font-size: 2rem;
+#section4iInfoContainer {
     width: 50%;
+}
+
+#section4iInfoContainer strong {
+    color: #d62020
+}
+
+#section4iInfo {
+    color: #c6c6c6;
+    font-size: 1.75rem;
+    width: 100%;
     /* Set width to 50% to make it half the page */
-    padding: 3%;
-    /* Adjust padding as needed */
+    padding: 1%;
     box-sizing: border-box;
 }
 
 .section4Image {
+    margin-left: 5%;
     font-size: 1.5em;
     display: flex;
     justify-content: center;
@@ -213,7 +247,7 @@
     padding-top: 10%;
     opacity: 0;
     display: flex;
-    transform: translateY(-150%);
+    transform: translateY(-125%);
     /* Change translateY to translateX */
     transition: all 1s;
 }
@@ -230,19 +264,29 @@
 }
 
 /*Government Slide*/
+.governmentiInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.governmentiInfoContainer strong {
+    color: #d62020;
+}
+
 #government {
     width: 120vw;
     height: 100vh;
-    background-color: #36454F;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .governmentiInfo {
-    color: white;
+    color: #c6c6c6;
     font-size: 1.75rem;
-    width: 30%;
+    width: 100%;
     /* Set width to 50% to make it half the page */
     padding-right: 10vw;
     /* Adjust padding as needed */
@@ -263,6 +307,12 @@
 .animateGov {
     opacity: 1;
 }
-.conclusionText{
-    font-size: 1.5em;
+
+.conclusionText {
+    padding-top: 5vh;
+    color: white;
+    font-size: 2em;
+}
+.conclusionText strong{
+    color: #dd0000;
 }

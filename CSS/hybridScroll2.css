@@ -10,6 +10,25 @@ body {
     background: grey;
     overflow-x: hidden;
 }
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    width: 40%;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
 
 #vignette {
     position: absolute;
@@ -19,12 +38,6 @@ body {
     top: 90vh;
     border: 1px solid none;
 }
-
-section {
-    height: 100vh;
-    width: 100vw;
-}
-
 .titleContainer {
     height: 100vh;
     width: 100vw;
@@ -41,6 +54,13 @@ section {
     color: white;
 }
 
+.eoText {
+    position: relative;
+    left: 50%;
+    transform: translate(-50,-50);
+}
+
+
 #img1 {
     position: absolute;
     left: -30vw;
@@ -53,7 +73,7 @@ section {
     position: relative;
     top: -50%;
     height: 125%;
-    animation: animate 1s ease-in-out 1 forwards;
+    animation: animate 2s ease-in-out 1 forwards;
 }
 
 #img3 {
@@ -69,8 +89,8 @@ section {
 
 #img4 {
     position: relative;
-    height: 80%;
-    width: auto;
+    padding:2rem;
+    width: 50%;
     top: -25vh;
 }
 
@@ -91,7 +111,6 @@ section {
 
 #img7{
     position: relative;
-    left: -50%;
     top: -40vh;
 }
 
@@ -99,15 +118,18 @@ section {
     position:relative;
     width: 50%;
     height: auto;
-    left:44%;
+    left:42.5%;
     top: -40vh;
 }
 
 #img9{
     position:relative;
     top: -40vh;
-    margin: 15px;
+    margin-left: 3rem;
+    width: 45%;
+    height: auto;
 }
+
 .pIntro {
     position: relative;
     top: 50%;
@@ -129,34 +151,28 @@ section {
     padding: 5rem;
 }
 
-h1 {
-    font-size: 4rem;
-}
 
-p {
-    width: 40%;
-    font-size: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-}
-
-.eoText {
-    position: relative;
-    left: 50%;
-}
 
 #section1 {
     display: flex;
+    margin-bottom: 10rem;
 }
 
 #section2 {
     display: flex;
+    margin-top: 20rem;
+
+}
+#section5{
+    margin-top: -10rem;
 }
 
+#section6{
+    margin-top: 10rem;
+}
+#section7{
+    margin-top: -10rem;
+}
 /* 
 .sticky_parent {
     height: 360vh;
@@ -224,15 +240,13 @@ a {
 }
 
 .iInfo1 {
-    height: 100vh;
-    width: 120vw;
+    /* height: 100vh;
+    width: 120vw; */
     /* color:red; */
 }
 
 /* Image Slider */
-/* body{
-    background: #eaeaea;
-} */
+
 .container {
     position: relative;
     top: 50%;

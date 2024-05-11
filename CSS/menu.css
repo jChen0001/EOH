@@ -1,64 +1,133 @@
-.MenuBar {
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: fixed;
-    height: 10vh;
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+} 
+
+body{
+    overflow-x: hidden;
+    background: grey;
     width: 100vw;
-    background: #848482;
-    top: 0;
-    position: fixed;
-    z-index: 10;
-    border-bottom: black 1px solid;
-
-}
-#logo{
-    height: 50px;
-    left: 2px;
-    top: 5px;
-    position: fixed;
-    z-index: 12;
-}
-.MainMenu {
-    width: 40px;
-    height: 40px;
-    right: 2vw;
-    top: 2vh;
-    position: fixed;
-    z-index: 12;
-}
-
-#MenuBackground {
-    z-index: -1;
-    transition: all ease-in-out 0.5s;
-    background: rgba(40, 40, 40, 1);
-    left: 0;
-    top: 0;
     height: 100vh;
+    
+}
+
+.slide{
+    position: absolute;
+    top: 12vh;
+    left: -0.7vw;
+    width: 100.7vw;
+    height: 88vh;
+}
+
+/* #arrow{
+    position: absolute;
+    top: 42vh;
     width: 100vw;
-    opacity: 0;
-    pointer-events: none;
-    display: grid;
-    place-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    width: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 6px;
+    animation: move 2s infinite ease-in-out;
 }
 
-.translated1 {
-    pointer-events: initial !important;
-    opacity: 1 !important;
+span:nth-of-type(1){
+    transform: rotate(-45deg);
 }
 
-.menuItems {
-    font-size: 2.5em;
-    text-align: left;
-    margin: 0.5em;
+span:nth-of-type(2){
+    transform: rotate(45deg);
 }
 
-body:has(.translated1) {
-    overflow: hidden;
+@keyframes move{
+    0%{margin-top: 0;}
+    50%{margin-top: 100px;}
+    100%{margin-top: 0;}
+} */
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    padding:10px;
 }
 
-.menuItems a {
+p{
+    width: 80%;
+    margin-left: 2vw;
+    margin-right: 7vw;
+    margin-top: 1vh;
+}
+
+section{
+    height: 100vh;
+}
+
+.container{
+    padding: 5rem;
+}
+
+#infoB1{
+    margin-top: 100vh;
+}
+
+.stats{
+    margin: 2px;
+    padding: 50px;
+    width: 75%;
+    font-size: 1.1rem;
+
+}
+
+#cont1{
+    position: absolute;
+    width: auto;
+    height: 10vh;
+    top: 90vh;
+    left: 50vw;
+    transform:translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+
+#btn1{
+    z-index:1;
+    border: none;
+    border: 2px solid black;
+    background:transparent;
+    border-radius: 10px;
+}
+
+#btn1 a {
     text-decoration: none;
-    color: white;
+    padding: 2rem;
+    transition-duration: 0.5s;
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 5px;
 }
+
+#btn1 a:hover {
+    color: white;
+    transition-duration: 0.5s;
+}
+
+#logo{
+    height: 10vh;
+}
+
+
+
+
+https://www.awwwards.com/inspiration_search/

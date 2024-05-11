@@ -63,7 +63,7 @@ section {
 
 #img1 {
     position: absolute;
-    left: -30vw;
+    left: -30%;
     top: 10vh;
     height: 90vh;
     opacity: 0.5;
@@ -96,7 +96,7 @@ section {
 
 #img5 {
     position: relative;
-    left: -47vw;
+    left: -47%;
     top: -40vh;
     width: 45%;
     height: auto;

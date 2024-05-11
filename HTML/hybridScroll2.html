@@ -6,22 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="stylesheet" href="../CSS/hybridScroll2.css">
+    <link rel="stylesheet" href="../CSS/lenis.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="../JAVASCRIPT/lenis.js"></script>
     <title>Israeli Palestine Conflict</title>
 </head>
 
 <body>
     <div class="MenuBar">
-        <a href="index.html"><img id="logo" src="../Images/Logo.png" alt="Logo"></a>
+        <a href="https://cantinadynamic-albertarmor.codio.io/index.html"><svg id="logo" version="1.0" xmlns="http://www.w3.org/2000/svg" width="138pt" height="50pt" viewBox="0 0 138 50" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,50.000000) scale(0.02,-0.02)" fill="#000000" stroke="none">
+                    <path d="M976 2060 c-52 -32 -124 -75 -160 -95 -36 -20 -181 -102 -321 -183
+l-255 -148 0 -506 0 -507 80 -41 80 -41 265 154 c290 169 578 335 1000 579
+l274 158 1 102 c0 100 -2 103 -85 147 l-85 45 -540 -313 c-297 -173 -569 -332
+-605 -354 l-65 -40 0 206 1 207 314 183 c173 101 370 213 437 250 l122 66
+-170 95 c-201 113 -171 109 -288 36z" />
+                    <path d="M3770 1664 c-260 -90 -191 -444 87 -444 177 0 233 52 233 218 0 179
+-149 285 -320 226z m221 -105 c34 -28 39 -163 8 -220 -26 -49 -239 -57 -278
+-11 -123 149 119 356 270 231z" />
+                    <path d="M4985 1657 c-143 -40 -174 -313 -47 -411 64 -49 289 -32 344 26 177
+189 -31 460 -297 385z m249 -109 c119 -162 -110 -355 -267 -226 -51 43 -28
+221 33 253 65 34 201 18 234 -27z" />
+                    <path d="M2152 1625 c-26 -89 1 -350 38 -378 61 -44 375 -38 366 8 -5 29 -35
+37 -166 45 l-160 10 -6 134 -6 134 166 6 c139 5 167 12 172 41 6 31 -13 35
+-193 35 -174 0 -202 -5 -211 -35z" />
+                    <path d="M2651 1629 c-54 -54 -44 -338 13 -378 74 -51 356 -44 356 9 0 37 -13
+40 -160 40 l-160 0 0 140 0 140 160 0 c147 0 160 3 160 40 0 54 -316 61 -369
+9z" />
+                    <path d="M3100 1440 c0 -207 2 -220 40 -220 34 0 40 13 40 90 l0 90 140 0 140
+0 0 -90 c0 -77 6 -90 40 -90 38 0 40 13 40 220 0 207 -2 220 -40 220 -34 0
+-40 -13 -40 -90 l0 -90 -140 0 -140 0 0 90 c0 77 -6 90 -40 90 -38 0 -40 -13
+-40 -220z" />
+                    <path d="M4200 1620 c-108 -108 -12 -220 188 -220 128 0 134 -2 128 -45 -6
+-42 -17 -45 -181 -51 -159 -5 -175 -9 -175 -45 0 -60 340 -59 400 1 106 106
+32 207 -163 220 -134 9 -148 14 -153 55 -7 43 -1 45 155 45 148 0 161 3 161
+40 0 37 -13 40 -160 40 -133 0 -167 -7 -200 -40z" />
+                    <path d="M5416 1440 c-5 -199 -3 -220 29 -220 19 0 36 9 38 20 1 11 4 29 7 40
+3 11 6 83 8 160 l2 140 160 0 c147 0 160 3 160 40 0 37 -13 40 -199 40 l-199
+0 -6 -220z" />
+                    <path d="M2260 1440 c0 -36 13 -40 130 -40 117 0 130 4 130 40 0 36 -13 40
+-130 40 -117 0 -130 -4 -130 -40z" />
+                    <path d="M5540 1440 c0 -36 13 -40 120 -40 107 0 120 4 120 40 0 36 -13 40
+-120 40 -107 0 -120 -4 -120 -40z" />
+                    <path d="M2149 860 c0 -257 0 -260 45 -260 42 0 46 9 46 110 l0 110 170 0 170
+0 0 -110 c0 -97 5 -110 40 -110 38 0 40 13 40 260 l0 260 -52 0 c-52 0 -52 -1
+-39 -110 l14 -110 -172 0 -171 0 0 110 c0 101 -4 110 -46 110 -45 0 -45 -3
+-45 -260z" />
+                    <path d="M2780 860 l0 -260 50 0 50 0 0 260 0 260 -50 0 -50 0 0 -260z" />
+                    <path d="M3009 1071 c-53 -54 -62 -110 -26 -177 34 -66 55 -73 200 -74 165 0
+197 -12 197 -71 0 -47 -5 -48 -205 -53 -195 -6 -205 -8 -211 -51 -11 -73 394
+-69 467 4 119 120 30 251 -171 251 -168 0 -200 11 -200 70 0 62 22 68 205 55
+l155 -11 0 53 0 53 -181 0 c-165 0 -185 -4 -230 -49z" />
+                    <path d="M3520 1090 c0 -16 0 -37 0 -45 1 -8 44 -15 95 -15 l95 0 6 -215 c5
+-211 6 -215 53 -215 47 0 47 1 44 215 l-3 215 105 -7 c101 -6 105 -5 105 45
+l0 52 -250 0 c-209 0 -250 -5 -250 -30z" />
+                    <path d="M4138 1064 c-148 -132 -82 -415 109 -466 263 -71 474 176 350 408
+-71 132 -339 165 -459 58z m345 -62 c65 -53 68 -228 5 -279 -49 -41 -250 -43
+-298 -3 -51 42 -41 250 14 289 64 44 220 40 279 -7z" />
+                    <path d="M4733 1107 c-38 -38 -13 -507 26 -507 37 0 40 16 45 215 l6 215 160
+0 160 0 7 -59 c9 -81 -40 -111 -181 -111 -103 0 -116 -5 -116 -40 0 -23 13
+-40 32 -40 17 0 79 -40 137 -90 80 -68 122 -90 173 -90 l67 0 -100 89 c-62 56
+-87 90 -67 90 117 3 192 224 107 310 -33 32 -426 48 -456 18z" />
+                    <path d="M5304 989 c9 -151 53 -209 158 -209 55 0 58 -4 58 -90 0 -77 6 -90
+40 -90 34 0 40 13 40 90 0 82 4 90 48 90 117 0 172 77 172 239 0 94 -3 101
+-50 101 -47 0 -50 -6 -50 -109 0 -130 -25 -151 -176 -151 -122 0 -154 33 -154
+158 0 82 -5 93 -47 99 -47 6 -48 4 -39 -128z" />
+                    <path d="M1889 1002 c-23 -22 -907 -540 -1025 -600 -120 -61 -118 -69 60 -169
+l163 -92 426 244 427 245 0 195 c0 187 -9 217 -51 177z" />
+                </g>
+            </svg></a>
         <img class="MainMenu" id="MainMenu" src="../Images/list.png" alt="Menu icon" onclick="changeImage()">
         <div id="MenuBackground">
             <div id=menuContainer>
-                <div class="menuItems"><a href="index.html">Homepage</a></div>
-                <div class="menuItems"><a href="HTML/hybridScroll1.html">The Holocaust</a></div>
-                <div class="menuItems"><a href="HTML/hybridScroll2.html">The Israeli Palestine Conflict</a></div>
-                <div class="menuItems"><a href="">Comparing and Contrasting (WIP)</a></div>
+                <div class="menuItems"><a href="https://cantinadynamic-albertarmor.codio.io/index.html">Homepage</a></div>
+                <div class="menuItems"><a href="https://cantinadynamic-albertarmor.codio.io/HTML/hybridScroll1.html">The Holocaust</a></div>
+                <div class="menuItems"><a href="https://cantinadynamic-albertarmor.codio.io/HTML/hybridScroll2.html">The Israeli Palestine Conflict</a></div>
+                <!-- <div class="menuItems"><a href="">Comparing and Contrasting (WIP)</a></div> -->
             </div>
         </div>
     </div>
@@ -60,7 +124,7 @@
         </section>
         <section>
             <div id="section3">
-                <div class="eoText">
+                <div class="eoText" class="newSegment">
                     <h1>Early 21st Century</h1>
                     <br>
                     <p>During the 21st century, there was a power struggle between Hamas and Fatas. Hamas eventually won the election due to his supporters who shared a similar goal of eradicating Israel.</p>
@@ -88,8 +152,8 @@
                     <p>Israel was trying to locate the tunnels used by the Gazans that offered shelter to Hamas officials, store weapon, and gain material through a tunnel to Egypt bypassing the financial restriction</p>
                     <p>The tunnel connecting Gaza and the outside world was slowly being picked apart</p>
                     <p>Gaza income collapsed and half of the adults in Gaza were unemployed</p>
-                    <img id="img7" src="../Images/hamasAirstrike.webp" alt="">
                 </div>
+                <img id="img7" src="../Images/hamasAirstrike.webp" alt="">
             </div>
         </section>
         <section class="iInfo">
@@ -101,7 +165,7 @@
         </section>
         <section>
             <div id="section7">
-                <div class="eoText">
+                <div class="eoText" class="newSegment">
                     <h1>Modern Day</h1>
                     <br>
                     <p>October 7 2023 Hamas launched its biggest attack on israel Operation Al Aqsa Flood, Israel responded by declaring war on Palestinians</p>
